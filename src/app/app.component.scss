@@ -1,0 +1,81 @@
+#layout{
+    background-image: url(../assets/img/bg.png);
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: auto;
+    object-fit: contain;
+}
+.content{
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 10px 10px 0px 10px;
+    left: 180px;
+    top: 50px;
+    width: calc(100% - 180px);
+    height: calc(100vh - 50px) !important;
+    min-height: calc(100vh - 50px) !important;
+    
+}
+.content-closed{
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 10px 10px 0px 10px;
+    left: 57px;
+    top: 50px;
+    width: calc(100% - 57px);
+    height: calc(100vh - 50px) !important;
+    min-height: calc(100vh - 50px) !important;
+}
+
+#login{
+    overflow: hidden;
+}
+
+::ng-deep .p-card-body{
+    height: 100%;
+    ::ng-deep .p-card-content{
+        height: 100%;
+    }
+}
+/* styles.css */
+.overlay-active {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+// .card-left{
+//     margin-left: 210px;
+// }
+.new-tolpabr{
+    margin-left: 74px;
+}
+::ng-deep .b-body .p-card-body{
+    padding: 25px;
+    height: 100vh;
+}
+::ng-deep .home-card .p-card{
+    box-shadow: none;
+    background-color: transparent;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #B7D6FE 100%) 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 3px 6px #00000029;
+    z-index: 9999;
+  }
+ 
+  @media only screen and (max-width: 768px) {
+    #layout{
+        background-size: 100% 100%;
+        object-fit: cover;
+    }
+  }

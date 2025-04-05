@@ -1,0 +1,10 @@
+<div class="flex flex-column align-items-center" [ngClass]="opened ?'sidebar': 'sidebar-closed'">
+    
+    <div class="sidebar-logo relative border-bottom-1 flex justify-content-center w-full pb-4 pt-4">
+        <img class="w-7" [src]="opened ? '../../../../assets/img/logo.png' : '../../../../assets/img/favicon.png'" />
+        <i class="pi pi-angle-left bg-primary" (click)="toggleSideBar()"></i>
+    </div>
+    <div class="sidebar-items overflow-auto">
+        <app-content-sidebar [menu]="menu"></app-content-sidebar>
+    </div>
+</div>

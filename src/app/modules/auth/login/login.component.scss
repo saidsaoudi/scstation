@@ -1,0 +1,31 @@
+.container{
+    // background: url('../../../../assets/img/bg.png') no-repeat;
+    i{
+        top: 30%;
+        font-size: 20px;
+        color: #517a9e;
+    }
+    p{
+        color: #828081;
+    }
+    input{
+        background: rgb(255, 255, 255);
+        border: 0.619965px solid rgb(173, 191, 207);
+        border-radius: 8px;
+        height: 50px;
+        color: #000B33;
+    }
+    .login-btn{
+        background: #00527c;
+        border-radius: 8px;
+        height: 55px;
+    }
+}
+.bg-form{
+    .img-login{
+        margin-top: 40% !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
