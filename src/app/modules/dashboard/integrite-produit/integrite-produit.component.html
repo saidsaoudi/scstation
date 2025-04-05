@@ -5,9 +5,20 @@
                 <img src="../../../../assets/img/icons/Vector.svg"/>
             </span> <span class="title">Intégrité Produit</span>
           </div>
-          <div class="stats">
-            chart 
+          <div>
+            <p-progressBar [value]="50" />
           </div>
+          <div class="pt-3">
+            <p-progressBar [value]="78" [style]="{ height: '8px' }">
+                <ng-template pTemplate="content" let-value> 
+                    <!-- <span>{{value}}%</span>     -->
+                </ng-template>
+            </p-progressBar>
+            <div class="flex justify-content-between">
+              <p class="text-white">0%</p>
+              <p class="percentage">78%</p>
+          </div>
+        </div>
     </div>
 
     <div class="back">

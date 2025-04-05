@@ -13,6 +13,7 @@ import { FidelisationClientComponent } from './fidelisation-client/fidelisation-
 import { TypologieClientsComponent } from './typologie-clients/typologie-clients.component';
 import { TauxShoppingComponent } from './taux-shopping/taux-shopping.component';
 import { IntegriteProduitComponent } from './integrite-produit/integrite-produit.component';
+import { ChiffreAffairesComponent } from './chiffre-affaires/chiffre-affaires.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { IntegriteProduitComponent } from './integrite-produit/integrite-produit
     FidelisationClientComponent,
     TypologieClientsComponent,
     TauxShoppingComponent,
-    IntegriteProduitComponent
+    IntegriteProduitComponent,
+    ChiffreAffairesComponent
   ],
   imports: [
     CommonModule,

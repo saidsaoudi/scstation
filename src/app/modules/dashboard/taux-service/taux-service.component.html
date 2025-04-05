@@ -5,11 +5,49 @@
                 <img src="../../../../assets/img/icons/Vector.svg"/>
             </span> <span class="title">Taux de Service  </span>
           </div>
-          <div class="stats">
-            <div>
-                progress
+          <div class="grid stats pt-2">
+            <div class="col-12 sm:col-12 md:col-12 lg:col-6">
+                <div>
+                    progress
+                </div>
             </div>
-            <div><span class="val">Transit</span>427</div> 
+            <div class="col-12 sm:col-12 md:col-12 lg:col-6">
+                <div class="w-full">
+                    <div class="pt-1">
+                        <div class="flex justify-content-between">
+                            <p class="text-white text-xs">Service glass</p>
+                            <p class="percentage">89%</p>
+                        </div>
+                        <p-progressBar [value]="89" [style]="{ height: '5px' }">
+                            <ng-template pTemplate="content" let-value> 
+                                <!-- <span>{{value}}%</span>     -->
+                            </ng-template>
+                        </p-progressBar>
+                      </div>
+                      <div class="pt-1">
+                        <div class="flex justify-content-between">
+                            <p class="text-white text-xs">Service capot</p>
+                            <p class="percentage">64%</p>
+                        </div>
+                        <p-progressBar [value]="64" [style]="{ height: '5px' }">
+                            <ng-template pTemplate="content" let-value> 
+                                <!-- <span>{{value}}%</span>     -->
+                            </ng-template>
+                        </p-progressBar>
+                      </div>
+                      <div class="pt-1">
+                        <div class="flex justify-content-between">
+                            <p class="text-white text-xs">Push commercial</p>
+                            <p class="percentage">72%</p>
+                        </div>
+                        <p-progressBar [value]="72" [style]="{ height: '5px' }">
+                            <ng-template pTemplate="content" let-value> 
+                                <!-- <span>{{value}}%</span>     -->
+                            </ng-template>
+                        </p-progressBar>
+                      </div>
+                </div>
+            </div> 
           </div>
     </div>
 

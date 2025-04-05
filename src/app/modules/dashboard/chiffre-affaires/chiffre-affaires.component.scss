@@ -35,12 +35,10 @@
     align-items: flex-start;
     gap: 10px;
     justify-content: flex-start;
+    margin-bottom: 10px;
     flex-direction: row;
     padding-left: 5px;
     line-height: 2;
-    .title{
-        text-transform: uppercase;
-    }
 }
 
 .arrow {
@@ -85,10 +83,8 @@
 .stats > div {
     text-align: center;
     padding: 0 8px;
-    border-right: 2px solid rgba(0, 250, 255, 0.2666666667);
-    font-size: 24px;
-    font-weight: bold;
-    color: #4BB7DB;
+    font-size: 13px;
+    color: #fff;
 }
 
 .stats > div:last-child {
@@ -97,15 +93,7 @@
 
 .val {
     display: block;
-    font-size: 13px;
-    margin-bottom: 5px;
+    font-size: 20px;
     font-weight: 400;
-    color: #fff;
-}
-.percentage{
-    text-align: right;
-    font-weight: 700;
-    font-size: 14px;
-    color: #4BB7DB;
-    padding-bottom: 5px;
+    color: #00faff;
 }

@@ -5,8 +5,39 @@
                 <img src="../../../../assets/img/icons/Vector.svg"/>
             </span> <span class="title">Fidélisation client </span>
           </div>
-          <div class="stats">
-            chart
+          <div class="grid">
+            <div class="col-6 sm:col-6 md:col-6 lg:col-6">
+              <div class="main-count">
+                <div class="icon"><img src="../../../../assets/img/icons/f1.svg"  class="w-12"/></div>
+                <div class="w-10 mx-auto pt-1">
+                  <div class="flex justify-content-between">
+                      <p class="text-white text-xs">Ancien client</p>
+                      <p class="percentage">92%</p>
+                  </div>
+                  <p-progressBar [value]="92" [style]="{ height: '5px' }">
+                      <ng-template pTemplate="content" let-value> 
+                          <!-- <span>{{value}}%</span>     -->
+                      </ng-template>
+                  </p-progressBar>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 sm:col-6 md:col-6 lg:col-6">
+              <div class="main-count">
+                <div class="icon"><img src="../../../../assets/img/icons/f2.svg" class="w-12"/></div>
+                <div class="w-10 mx-auto pt-1">
+                  <div class="flex justify-content-between">
+                      <p class="text-white text-xs">Nouveau client</p>
+                      <p class="percentage">22%</p>
+                  </div>
+                  <p-progressBar [value]="22" [style]="{ height: '5px' }">
+                      <ng-template pTemplate="content" let-value> 
+                          <!-- <span>{{value}}%</span>     -->
+                      </ng-template>
+                  </p-progressBar>
+                </div>
+              </div>
+            </div>
           </div>
     </div>
     

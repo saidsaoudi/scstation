@@ -85,11 +85,13 @@
 
 .stats > div {
     text-align: center;
-    padding: 0 8px;
+    padding: 0 25px;
     border-right: 2px solid rgba(0, 250, 255, 0.2666666667);
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     color: #4BB7DB;
+    display: flex;
+    align-items: center;
 }
 
 .stats > div:last-child {
