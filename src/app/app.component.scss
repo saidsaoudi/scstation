@@ -1,7 +1,5 @@
 #layout{
     background-image: url(../assets/img/bg.png);
-    padding-left: 15px;
-    padding-right: 15px;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -78,4 +76,9 @@
         background-size: 100% 100%;
         object-fit: cover;
     }
+  }
+  .bg-color{
+    background-color: #00000059;
+    padding-left: 15px;
+    padding-right: 15px;
   }
