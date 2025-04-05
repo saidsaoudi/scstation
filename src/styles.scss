@@ -193,3 +193,14 @@ label{
   border-radius: 13px;
   background: #1AA5C0;
 }
+.futuristic-box {
+  position: relative;
+  border-radius: 15px;
+  border: 50px solid transparent;
+  border-image: url("./assets/img/border-bg.png") 50 round;
+  backdrop-filter: blur(3px);
+  }
+.futuristic-content{
+  margin: -50px;
+  padding: 20px;
+}
