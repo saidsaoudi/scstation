@@ -26,7 +26,6 @@ import { EffectsModule } from '@ngrx/effects';
 import { effects } from './core/store/effects';
 import { environment } from 'src/environments/environment';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { NavmenuComponent } from "./shared/layout/navmenu/navmenu.component";
 
 
 
@@ -41,7 +40,7 @@ import { NavmenuComponent } from "./shared/layout/navmenu/navmenu.component";
     StarComponent,
     GoBackComponent,
     ImageWithPreviewComponent,
-    NavmenuComponent,
+
 
    ],
   imports: [
@@ -55,7 +54,8 @@ import { NavmenuComponent } from "./shared/layout/navmenu/navmenu.component";
     CoreModule,
     SharedModule,
     BrowserAnimationsModule,
-    LeafletModule
+    LeafletModule,
+    
 
 ],
   providers: [

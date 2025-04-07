@@ -14,6 +14,8 @@ import { TypologieClientsComponent } from './typologie-clients/typologie-clients
 import { TauxShoppingComponent } from './taux-shopping/taux-shopping.component';
 import { IntegriteProduitComponent } from './integrite-produit/integrite-produit.component';
 import { ChiffreAffairesComponent } from './chiffre-affaires/chiffre-affaires.component';
+import { EvolutionCarburantComponent } from './evolution-carburant/evolution-carburant.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -29,13 +31,14 @@ import { ChiffreAffairesComponent } from './chiffre-affaires/chiffre-affaires.co
     TypologieClientsComponent,
     TauxShoppingComponent,
     IntegriteProduitComponent,
-    ChiffreAffairesComponent
+    ChiffreAffairesComponent,
+    EvolutionCarburantComponent
   ],
   imports: [
     CommonModule,
     DashboardRoutingModule,
     PrimeNGModule,
-    
+    SharedModule
     
 ]
 })
