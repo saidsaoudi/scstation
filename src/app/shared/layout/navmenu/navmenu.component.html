@@ -1,3 +1,12 @@
-<div class="bg-white mt-3">
-    <p>navmenu works!</p>
-</div>
+<nav class="nav-menu">
+    <button class="menu-button" (click)="toggleMenu()">☰</button>
+    <ul class="nav-list" [class.show]="isMenuOpen">
+      <li class="nav-item"><a href="#">Matricules</a></li>
+      <li class="nav-item"><a href="#">Listes de stations</a></li>
+      <li class="nav-item"><a href="#">Carte</a></li>
+      <li class="nav-item home"><a href="#"><i class="pi pi-home"></i></a></li>
+      <li class="nav-item"><a href="#">Oasis café</a></li>
+      <li class="nav-item"><a href="#">Mini brahim</a></li>
+      <li class="nav-item"><a href="#">Auto-go</a></li>
+    </ul>
+  </nav>
