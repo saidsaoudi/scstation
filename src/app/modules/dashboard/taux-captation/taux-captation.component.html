@@ -6,11 +6,18 @@
                 <img src="../../../../assets/img/icons/Vector.svg"/>
             </span> <span class="title">Taux de captation </span>
           </div>
-          <div class="stats">
-            <div>
-                progress
+          <div class="grid">
+            <div class="col-12 sm:col-12 md:col-12 lg:col-6">
+                <div class="progress" [attr.data-progress]="progresBarValue">
+                    <div class="barOverflow">
+                      <div class="bar" [ngStyle]="{ transform: rotation }"></div>
+                    </div>
+                    <span>{{ displayedprogresBarValue }}</span>%
+                </div>
             </div>
-            <div><span class="val">Transit</span>427</div> 
+            <div class="col-12 sm:col-12 md:col-12 lg:col-6 stats">
+                <div class="pl-4"><span class="val">Transit</span>427</div>
+            </div> 
           </div>
     </div>
 </div>

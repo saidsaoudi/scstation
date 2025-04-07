@@ -49,16 +49,11 @@
 }
 
 /* Stats line */
-.stats {
-    display: flex;
-    justify-content: space-around;
-    color: #c4eaff;
-}
 
-.stats > div {
-    text-align: center;
+
+.stats {
     padding: 0 8px;
-    border-right: 2px solid rgba(0, 250, 255, 0.2666666667);
+    border-left: 2px solid rgba(0, 250, 255, 0.2666666667);
     font-size: 24px;
     font-weight: bold;
     color: #4BB7DB;
@@ -75,3 +70,35 @@
     font-weight: 400;
     color: #fff;
 }
+.progress {
+    position: relative;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+  }
+  
+  .barOverflow {
+    position: relative;
+    overflow: hidden;
+    width: 130px;
+    height: 65px; /* Adjusted for a smoother half-circle */
+    margin-bottom: -30px;
+  }
+  
+  .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 15px solid #eee;
+    border-bottom-color: rgba(20, 205, 240, 1);
+    border-right-color: rgba(20, 205, 240, 1);
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+  }
+  
