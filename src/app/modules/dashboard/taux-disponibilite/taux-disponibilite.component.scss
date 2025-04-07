@@ -6,6 +6,14 @@
         width: 100%;
     }  
 }
+::ng-deep .chartdispo{
+    display: flex;
+    height: 100px !important;
+    width: 100% !important;
+    div{
+        width: 100%;
+    }
+}
 
 .percentage{
     text-align: right;
