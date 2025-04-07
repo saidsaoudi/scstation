@@ -42,6 +42,20 @@
 //     background-repeat: no-repeat;
 //     background-size: cover;
 // }
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  max-height: 100%;
+  float: left;
+  width: 100%;
+}
 
 .uppercase-text {
   text-transform: uppercase;

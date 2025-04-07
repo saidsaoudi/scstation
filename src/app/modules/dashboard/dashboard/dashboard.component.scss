@@ -13,3 +13,9 @@
 //         width: 100%;
 //     }
 // }
+
+@media (device-width: 100vw) and (device-height: 100vh) {
+    .w-full.mb-2{
+      margin-bottom: 0px !important;
+    }
+  }
