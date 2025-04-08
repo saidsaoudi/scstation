@@ -6,9 +6,49 @@
                 <img src="../../../../assets/img/icons/Vector.svg"/>
             </span> <span class="title">Temps de prise en charge </span>
           </div>
-          <div class="stats">
-            chart
+          <div class="h-full">
+            <div class="m-auto">
+              <div class="mb-2">
+                <!-- Grid of 3 lanes -->
+                <div class="grid">
+                  <div *ngFor="let lane of lanes" class="col-12 sm:col-12 md:col-4 lg:col-4 p-1">
+                    <div class="text-center font-medium text-sm mb-2 text-white">{{ lane.name }}</div>
+          
+                    <div class="border-2 border-round" style="border-color: rgba(236, 236, 236, 0.3);    padding: 10px 7px 3px 10px;">
+                      <!-- Grid of 2 blocks -->
+                      <div class="grid gap-1">
+                        <ng-container *ngFor="let block of lane.blocks; let i = index">
+                          <div
+                            class="col-12 sm:col-12 md:col-6 lg:col-6 border-1 border-round shadow-2"
+                            style="width: 46%;height: 1.8rem; background-color: rgba(38, 226, 179, 1)"
+                            [ngClass]="getStatusColor(block)"
+                          ></div>
+                        </ng-container>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Legend -->
+              <div class="flex justify-content-center gap-5 text-sm">
+                <div class="flex align-items-center gap-2">
+                  <div class="border-round-sm" style="width: 12px; height: 12px; background-color: #34d399;"></div>
+                  <span class="text-white">0 à 10 s</span>
+                </div>
+                <div class="flex align-items-center gap-2">
+                  <div class="border-round-sm" style="width: 12px; height: 12px; background-color: #fb923c;"></div>
+                  <span  class="text-white">10 à 30 s</span>
+                </div>
+                <div class="flex align-items-center gap-2">
+                  <div class="border-round-sm"  style="width: 12px; height: 12px; background-color: #ef4444;"></div>
+                  <span class="text-white">30 s rouge</span>
+                </div>
+              </div>
+            </div>
           </div>
+          
+
     </div>
 
     </div> 
